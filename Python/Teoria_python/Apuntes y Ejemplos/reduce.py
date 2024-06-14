@@ -1,8 +1,10 @@
 # Explicación de la función reduce() en Python
 # La función reduce() se utiliza para aplicar una función de manera acumulativa a los elementos de una secuencia (como listas, tuplas, etc.),
 # reduciendo la secuencia a un solo valor.
+# no es propio de python, siempre hay que importarlo -> from functools import reduce
 
-from functools import reduce  # Importar reduce desde functools en Python 3
+from functools import reduce  # Importar la funcion reduce() // pip install functools
+from operator import add      # Importar la funcion add(), es para este ejemplo // pip install operator-courier
 
 ## Ejemplo 1 - Suma acumulativa
 
