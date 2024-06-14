@@ -1,4 +1,4 @@
-## Funciones iteradoras
+## FUNCIONES ITERADORAS
 # https://pypi.org/project // Librerias de Python
 
 # map() (<<funcion>>, <<iterable>>)
@@ -24,3 +24,8 @@ from operator import add      # Importar la funcion add(), es para este ejemplo 
 
 l = [1,3,4,5]
 print(f"Ejemplo reduce: {reduce(add, l)}")      # Va a sumar cada elemento de la lista l
+
+## FUNCIONES GENERADORAS
+
+
+## FUNCIONES DECORADORAS

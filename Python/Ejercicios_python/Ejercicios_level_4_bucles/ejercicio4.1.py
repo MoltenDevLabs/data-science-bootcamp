@@ -2,7 +2,7 @@
 
 n = input("Pon una palabra: ")   # El usuario pone una palabra
 
-for n in range(10):              # Se itera la palabra en un rango de 10
+for i in range(10):              # Se itera la palabra en un rango de 10
   print(n)                       # Se imprime la palabra introducida para cada iteracion
 
 

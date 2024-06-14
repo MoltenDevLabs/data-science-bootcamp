@@ -5,3 +5,4 @@ while n < 11:                     # Se recorre el bucle mientras n sea menor a 1
   for i in range(1, 11):          # Se recorre el rango de números del al 10 sin modificar n
     print(f"{n}*{i} = {n*i}")     # Se imprime el valor de n, de i y el resultado n*i
   n += 1                          # Se suma 1 a la n y vuelve a empezar el bucle while
+  

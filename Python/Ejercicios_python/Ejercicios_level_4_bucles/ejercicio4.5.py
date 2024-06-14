@@ -2,7 +2,7 @@
 
 cantidad = float(input("Cantidad a invertir: "))  # El usuario introduce la cantidad a invertir
 interes = float(input("Interés anual: "))         # El usuario introduce el interes anual
-años = int(input("Numero de años: "))             # El usuario introduce el numero de años
+años = int(float(input("Numero de años: ")))      # El usuario introduce el numero de años
 
 for i in range(1, años+1):                        # Se recorre el rango de numeros desde 1 hasta los años introducidos por el usuario
   cantidad += (cantidad*interes)/100              # Se modifica la cantidad, según en interés para cada año
