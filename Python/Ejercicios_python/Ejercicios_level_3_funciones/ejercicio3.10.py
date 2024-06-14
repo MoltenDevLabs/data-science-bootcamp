@@ -11,7 +11,7 @@ def atipicos(l):
 
   def score(n): # Función clousure (obliga a aplicar la funcion a cada uno de los elementos)
     puntuacion = (n - media) / (desvs)
-    return (puntuacion < -3) or (puntuacion > 3)
+    return (puntuacion < -3) or (puntuacion > 3) # Rango de sensibilidad de -3 a 3
   
   return score
 
