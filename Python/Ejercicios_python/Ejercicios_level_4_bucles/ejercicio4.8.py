@@ -5,7 +5,7 @@
 # 7 5 3 1
 # 9 7 5 3 1
 
-n = int(input("Pon un número: "))  # El usuario introduce un entero n
+n = int(float(input("Pon un número: "))) # El usuario introduce un entero n
 
 r = ''                             # Se inicializa r como string vacio
 for i in range(1, n+1):            # Se recorren los números desde 1 hasta n
