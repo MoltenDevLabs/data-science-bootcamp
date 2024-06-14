@@ -10,14 +10,14 @@
 
 # Métodos:
 #   write() -> escritura
-#   readline() -> lectura línea por línea
-#   read(<<n>>) -> lectura de n caracteres
 #   read() -> lectura de todo el archivo
+#   read(<<n>>) -> lectura de n caracteres
+#   readline() -> lectura línea por línea
 #   close() -> cierre
 
 # Modos:
-#   'r' -> lectura
 #   'w' -> escritura
+#   'r' -> lectura
 #   'a' -> añadir
 #   'x' -> creación
 
