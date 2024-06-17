@@ -1,8 +1,11 @@
 # Escribir un programa que acceda a un fichero de internet mediante su url y muestre por pantalla el número de palabras que contiene.
 
-internet_file = "https://ec.europa.eu/eurostat/documents/15234730/17582411/KS-HA-23-001-EN-N.pdf/5d783d9e-9cb3-897c-8360-5122563ae8f3?version=6.0&t=1700579783008"
+from urllib import request
+from urllib.error import URLError
 
-def internet_file_word_counter(file):
+
+
+""" def url_word_counter(file):
   c = 0
   try:
     with open(file, 'r', encoding='utf-8') as f:
@@ -13,5 +16,24 @@ def internet_file_word_counter(file):
   except Exception as e:
     print(f"Error: {e}")
 
-count = internet_file_word_counter(internet_file)
-print(count)
+count = url_word_counter(url)
+print(count) """
+
+
+# Solucion profe
+
+def scrap_i(url):
+  """
+  
+  """
+  try:
+    with request.urlopen(url) as f:
+      c = f.read()
+  except URLError:
+    x = "La url no existe o no se encuentra el fichero"
+  else:
+    x = len(c.split())
+  return x
+
+d = "https://docs.openstack.org/glance/ocata/_sources/sample-configuration.txt"
+print(scrap_i(d))
