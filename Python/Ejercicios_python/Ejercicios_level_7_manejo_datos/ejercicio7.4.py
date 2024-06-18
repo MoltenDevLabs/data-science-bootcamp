@@ -3,28 +3,18 @@
 from urllib import request
 from urllib.error import URLError
 
-
-
-""" def url_word_counter(file):
-  c = 0
-  try:
-    with open(file, 'r', encoding='utf-8') as f:
-      words = f.readlines().split(" ")
-      for i in words:
-        c += 1
-    return c
-  except Exception as e:
-    print(f"Error: {e}")
-
-count = url_word_counter(url)
-print(count) """
-
-
 # Solucion profe
 
 def scrap_i(url):
   """
-  
+    USO: recibe una url y cuenta el numero de palabras de la url
+    PARAMETROS:
+      url[str]: direccion url a inspeccionar
+    VARIABLES:
+      c[list]: lectura de las palabras presentes en la web de la url
+      x[str]: contaje de palabras / advertencia si no existe o no se puede acceder al archivo de la url
+    RETURN:
+      x[str]: contaje de palabras / advertencia
   """
   try:
     with request.urlopen(url) as f:
@@ -36,4 +26,5 @@ def scrap_i(url):
   return x
 
 d = "https://docs.openstack.org/glance/ocata/_sources/sample-configuration.txt"
+
 print(scrap_i(d))
