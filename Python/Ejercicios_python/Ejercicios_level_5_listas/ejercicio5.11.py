@@ -9,3 +9,10 @@ for i in range(len(v1)):  # Se itera por los indices del vector 1
   prod += v1[i]*v2[i]     # Se suma el producto de los indices de v1 y v2
 
 print(prod)               # Se imprime el resultado
+
+# Solución profe
+pe = 0
+for i, j in zip(v1, v2):
+  pe += i * j
+
+print(pe)

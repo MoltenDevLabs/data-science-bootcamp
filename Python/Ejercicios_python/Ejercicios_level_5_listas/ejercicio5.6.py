@@ -4,7 +4,7 @@ a = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]  # Se crea la 
 
 n = []                                                          # Se inicializa la variable n como lista vacia
 for i in a:                                                     # Se itera sobre la lista a
-  x = int(input(f"Que nota has sacado en {i}? "))               # Se pregunta al usuario la nota de cada asignatura
+  x = float(input(f"Que nota has sacado en {i}? "))               # Se pregunta al usuario la nota de cada asignatura
   n.append(x)                                                   # Se añaden las notas a la lista n
 
 asus = []                                                       # Se inicializa la variable asus como lista vacia

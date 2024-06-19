@@ -40,3 +40,18 @@ numeros = [1, 2, 3, 4]                           # Definición de una lista de n
 cuadrados_funcion = {x: calcular_cuadrado(x) for x in numeros}  # Uso de un diccionario de comprensión con función
 
 print(f"Ejemplo 5: {cuadrados_funcion}")         # Se imprimirá {1: 1, 2: 4, 3: 9, 4: 16}, los cuadrados de los números con los números como claves
+
+## Ejemplo 6 - Diccionario donde las claves son los números del 1 al 100 y los valores son una tupla con el cuadrado y la raíz cuadrada del número
+
+cuadrado_y_raiz = {i: tuple((i**2, i**0.5)) for i in range(1, 100)}
+
+print(f"Ejemplo 6: {cuadrado_y_raiz}")
+
+## Ejemplo 7 - Dada una lista de palabras, generar un nuevo diccionario que contenga como claves las palabras originales y como valores las palabras invertidas, pero sólo si la palabra original tiene más de 5 caracteres y no contiene ninguna vocal
+
+palabras = ['anchoa', 'atún', 'salmón', 'ba', 'tib', 'zxcvb', 'zx', 'bcdfghjklm', 'qrstvwxyz', 'fghjklmnp', 'bcdflnprstv']
+vocales = ['a', 'e', 'i', 'o', 'u']
+
+diccionario_condiciones = {i: i[::-1] for i in palabras if len(i) >= 5 and not any(letra in i for letra in vocales)}
+
+print(f"Ejemplo 7: {diccionario_condiciones}")
