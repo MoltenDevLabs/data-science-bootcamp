@@ -117,7 +117,7 @@ np.outer(a,b)
 # Modulo de un vector
 np.linalg.norm(a)
 
-# Producto matricial (poderse hacer tienen que ser dimensionalmente compatibles)
+# Producto matricial (para poderse hacer tienen que ser dimensionalmente compatibles)
 a, b = np.array([[1, 2], [4, 5]]), np.array([2, 2])
 
 a.dot(b)

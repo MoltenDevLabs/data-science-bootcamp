@@ -8,4 +8,6 @@ def numeros_perfectos(numero):
             divisores.append(n)
     return divisores
 
+
+
 print(numeros_perfectos(6))

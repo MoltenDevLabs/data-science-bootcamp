@@ -22,12 +22,12 @@ def total_cartera(file):
   with open(file, 'r', encoding='utf-8') as f:
     filas = csv.reader(f)
     headers = next(filas)   # Salta los encabezados
-    """ total = 0           # Codigo sin usar compresión de listas
+    """ total = 0           # Codigo sin usar comprensión de listas
       for i in filas:
       shares = int(i[1])
       price = float(i[2])
       total += shares*price """
-    total = sum(int(i[1]) * float(i[2]) for i in filas) # Codigo usando compresión de listas. Iteramos por cada fila (i[0] es name, i[1] es shares, i[2] es price)
+    total = sum(int(i[1]) * float(i[2]) for i in filas) # Codigo usando comprensión de listas. Iteramos por cada fila (i[0] es name, i[1] es shares, i[2] es price)
   return total
 
 
